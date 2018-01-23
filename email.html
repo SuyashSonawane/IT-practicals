@@ -1,0 +1,29 @@
+<html>
+<head>
+<script>
+function validateForm()
+{
+    var x = document.forms["myForm"]["txtemail"].value;
+    var atpos = x.indexOf("@");
+    var dotpos = x.lastIndexOf(".");
+    if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+        alert("Not a valid e-mail address");
+
+    }
+    else
+      {
+        alert("Corrcet email");
+        txtemail.focus();
+      }
+
+}
+</script>
+</head>
+
+<body>
+<form name="myForm" >
+Email: <input type="text" name="txtemail">
+<input type="button" value="Submit" onclick="validateForm()">
+</form>
+</body>
+</html>
