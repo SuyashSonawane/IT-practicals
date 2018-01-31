@@ -41,7 +41,55 @@ function f7()
 </head>
 <body>
 	<form>
+		<input type="button" value="click me" onmouseover="f1()">		
+	</form>
+<p>"<html>
+<head><title>Display of 7 colors</title>
+<script language="javascript">
+function f1()
+{	
+	document.bgColor="red"
+	window.setTimeout("f2()",120)
+}
+function f2()
+{
+	document.bgColor="orange"
+	window.setTimeout("f3()",120)
+}
+function f3()
+{
+	document.bgColor="green"
+	window.setTimeout("f4()",120)
+}
+function f4()
+{
+	document.bgColor="pink"
+	window.setTimeout("f5()",120)
+}
+function f5()
+{
+	document.bgColor="yello"
+	window.setTimeout("f6()",120)
+}
+function f6()
+{
+	document.bgColor="blue"
+	window.setTimeout("f7()",120)
+}
+function f7()
+{
+	document.bgColor="purple"
+	window.setTimeout("f1()",120)
+}
+
+</script>
+</head>
+<body>
+	<form>
 		<input type="button" value="click me" onmouseover="f1()">
 	</form>
+</body>
+</html>
+"</p>
 </body>
 </html>
