@@ -3,7 +3,7 @@
 <script>
 function validateForm()
 {
-    var x = document.forms["myForm"]["txtemail"].value;
+    var x = document.myForm.txtemail.value;
     var atpos = x.indexOf("@");
     var dotpos = x.lastIndexOf(".");
     if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
